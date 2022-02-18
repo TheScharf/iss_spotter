@@ -1,5 +1,8 @@
 // index.js
-const { fetchMyIP } = require('./iss');
+const {
+  fetchMyIP,
+  fetchCoordsByIP
+} = require('./iss');
 
 // fetchMyIP((error, ip) => {
 //   if (error) {
@@ -18,3 +21,4 @@ const callback = (error, ip) => {
   console.log('It worked! Returned IP:' , ip);
 };
 //fetchMyIP(callback);
+//fetchCoordsByIP('174.3.200.118',(callback));
